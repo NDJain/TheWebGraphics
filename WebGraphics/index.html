@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>project</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/jquery-ui-1.12.1.min.js"></script>
+    <script src="three.js"></script>
+    <script src="dat.gui.min.js"></script>
+    <script src="OrbitControls.js"></script>
+    <script src="Model/Molekula.js"></script>
+    <script src="Model/AppModel.js"></script>
+    <script src="Presenter/RenderPresenter.js"></script>
+    <script src="View/ScriptsList.js"></script>
+    <script src="View/RendererWidget.js"></script>
+    <script src="Presenter/FileLoadPresenter.js"></script>
+    <script src="Presenter/ScriptPresenter.js"></script>
+    <script src="app.js"></script>
+</head>
+<body style="display:flex; flex-direction:row;">
+
+    <div id="content" class="contentStyle" style="width: 800px;">
+        <div id="renderDiv" style="width:800px;height:600px;position: relative;">
+            <div id="infoDiv" style="position: absolute; width: 100px; height: 100px; display: none; color: white;"></div>
+        </div>
+        <div>Загрузить модель</div>
+        <input type="file" id="modelImport" />
+        <button id="clearBtn">Очистить</button>
+        <div>Загрузить скрипт</div>
+        <input type="file" id="scriptImport" />
+        <button id="bboxBtn">ББОКС</button>
+    </div>
+
+    <div id="scriptsList" style="width: 500px; height:500px;"></div>
+</body>
+</html>
